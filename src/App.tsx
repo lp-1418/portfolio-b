@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import About from './components/landing/About';
+import Footer from './components/landing/Footer';
+import Header from './components/landing/Header';
+import Hero from './components/landing/Hero';
+import Projects from './components/landing/Projects';
+import Skills from './components/landing/Skills';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="bg-gradient-to-r from-indigo-800 to-indigo-950 min-h-[100vh]">
+      <header>
+        <Header />
       </header>
+
+      <div>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+      </div>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
