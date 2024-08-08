@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true)
+    }, 1500);
+
+  }, []);
   return (
     <div className="hero h-[84vh]">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -8,7 +15,7 @@ function Hero() {
           <div className='flex gap-6 flex-col'>
             <div>
               <p>Mi nombre es </p>
-              <h1 className="text-7xl font-extrabold">Lucas Perata.</h1>
+              <h1 className="text-7xl text-white font-extrabold">Lucas.</h1>
             </div>
             <p className='text-5xl font-semibold'>Escribo instrucciones para autómatas.</p>
             <div className='w-1/2'>
@@ -23,6 +30,13 @@ function Hero() {
           </div>
         </div>
       </div>
+
+      {
+        isVisible ? <div className='self-end'>
+          <img width={50} src="scroll.gif" />
+        </div> : <div> </div>
+      }
+
     </div>
   )
 }
