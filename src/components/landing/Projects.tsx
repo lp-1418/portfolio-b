@@ -1,30 +1,79 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ProjectCard from '../extras/ProjectCard'
 
 function Projects() {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const projectSlides = [
+    { side: true, title: "Proyecto 1" },
+    { side: false, title: "Proyecto 2" },
+    { side: true, title: "Proyecto 3" },
+    { side: false, title: "Proyecto 4" },
+  ];
+
+  // Group the projects in pairs for each slide
+  const groupedSlides = [];
+  for (let i = 0; i < projectSlides.length; i += 2) {
+    groupedSlides.push(projectSlides.slice(i, i + 2));
+  }
+
+  const hasSlides = groupedSlides.length > 0;
+  const isFirstSlide = hasSlides && currentSlide === 0;
+  const isLastSlide = hasSlides && currentSlide === groupedSlides.length - 1;
+
+  const handleNextSlide = () => {
+    if (!isLastSlide) {
+      setIsTransitioning(true);
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % groupedSlides.length);
+    }
+  };
+
+  const handlePrevSlide = () => {
+    if (!isFirstSlide) {
+      setIsTransitioning(true);
+      setCurrentSlide((prevSlide) => (prevSlide - 1 + groupedSlides.length) % groupedSlides.length);
+    }
+  };
+
+  // Reset transition state after transition ends
+  const handleTransitionEnd = () => {
+    setIsTransitioning(false);
+  };
+
   return (
-    <div className="hero h-[50vh] ">
-      <div className="hero-content flex-col lg:flex-row-reverse ">
-        <div className='text-left flex justify-center flex-col '>
-          <div className='flex gap-6 flex-col'>
-            <h2 className='text-3xl font-bold'>Proyectos</h2>
-            <div className='w-[50vw] gap-5 flex flex-row-reverse'>
-              <div className='text-right'>
-                <h3>Proyecto 1</h3>
-                <p className='w-80'>Descripción descripción descripción de palabras Descripción descripción descripción de palabras</p>
-              </div>
-              <div className="mockup-browser bg-base-300 border">
-                <div className="mockup-browser-toolbar">
-                  <div className="input">https://daisyui.com</div>
-                </div>
-                <div className="bg-base-200 flex justify-center px-4 py-16">Hello!</div>
+    <div id='proyectos' className="hero">
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className='h-[100vh] flex justify-center items-center'>
+          <div className='relative w-[65vw] h-[100vh]'>
+            <h2 className='text-3xl font-bold text-left mb-10'>Proyectos</h2>
+            <button
+              onClick={handlePrevSlide}
+              disabled={isFirstSlide}
+              className="btn btn-circle absolute left-[-2.5rem] top-1/2 transform -translate-y-1/2 z-10"
+            >
+              ❮
+            </button>
+            <button
+              onClick={handleNextSlide}
+              disabled={isLastSlide}
+              className="btn btn-circle absolute right-[-2.5rem] top-1/2 transform -translate-y-1/2 z-10"
+            >
+              ❯
+            </button>
+            <div className="carousel flex justify-center">
+              <div className="relative flex flex-col items-center w-full">
+                {groupedSlides[currentSlide].map((project, index) => (
+                  <div key={index} className="p-2">
+                    <ProjectCard side={project.side} title={project.title} />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
-      </div >
-    </div >
-
-  )
+      </div>
+    </div>)
 }
 
 export default Projects

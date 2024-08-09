@@ -3,12 +3,12 @@ import CardSkills from '../extras/CardSkills'
 
 function Skills() {
   return (
-    <div className="hero h-content">
+    <div className="hero mb-[15vh]">
       <div className="hero-content flex-col lg:flex-row-reverse ">
         <div className='text-left flex justify-center flex-row'>
-          <div className='flex gap-6 flex-wrap w-1/2 h-content'>
+          <div className='flex gap-6 flex-wrap'>
             <h2 className='text-3xl font-bold'>Conocimientos técnicos</h2>
-            <div className='flex flex-wrap w-[100vw] max-h-[30vh]  gap-5'>
+            <div className='flex flex-wrap  max-h-[30vh]  gap-5 p-10'>
 
               <CardSkills link={"/logos/github.svg"} />
               <CardSkills link={"logos/linux.png"} />
@@ -26,7 +26,7 @@ function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

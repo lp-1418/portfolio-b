@@ -17,8 +17,10 @@ function App() {
 
       <div>
         <Hero />
-        <About />
-        <Skills />
+        <div className='flex flex-col '>
+          <About />
+          <Skills />
+        </div>
         <Projects />
       </div>
 

@@ -8,9 +8,9 @@ function Header() {
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal text-[1.8vh]  px-1">
-          <li><a>Sobre mí</a></li>
-          <li><a>Habilidades</a></li>
-          <li><a>Proyectos</a></li>
+          <li><a href='"#about'>Sobre mí</a></li>
+          {/* <li><a>Habilidades</a></li> */}
+          <li><a href='#proyectos'>Proyectos</a></li>
         </ul>
       </div>
     </div>
