@@ -42,7 +42,9 @@
 }
 
 .hero-content .slide-in {
+  opacity: 0; /* Oculta los elementos antes de la animación */
   animation: slideIn 1s ease-out forwards;
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
 }
 
 .hero-content .slide-in:nth-child(1) {
@@ -60,4 +62,5 @@
 .hero-content .slide-in:nth-child(4) {
   animation-delay: 1.2s;
 }
+
 
