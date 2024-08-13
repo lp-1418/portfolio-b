@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ProjectCard from '../extras/ProjectCard'
+import "./landing.css"
 
 function Projects() {
 
@@ -42,11 +43,11 @@ function Projects() {
   };
 
   return (
-    <div id='proyectos' className="hero">
+    <div id='proyectos' className="hero mb-0">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className='h-[100vh] flex justify-center items-center'>
           <div className='relative w-[65vw] h-[100vh]'>
-            <h2 className='text-3xl font-bold text-left mb-10'>Proyectos</h2>
+            <h2 className='text-3xl font-bold text-left mb-10'><span className='text-second'>3. </span>Proyectos</h2>
             <button
               onClick={handlePrevSlide}
               disabled={isFirstSlide}
