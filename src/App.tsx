@@ -1,10 +1,11 @@
 import Footer from './components/landing/Footer';
-import Header from './components/landing/Header';
 import "./App.css"
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
 import Home from './pages/Home';
 import { useState } from 'react';
 import Blog from './pages/Blog';
+import BlogArticle from './components/blog/BlogArticle';
+import Header from './components/landing/Header';
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
@@ -14,12 +15,14 @@ function App() {
   return (
     <div className="bg-gradient-to-r from-indigo-800 to-indigo-950 min-h-[100vh] scroll-smooth">
       <Router>
-        <header>
-          <Header isAuth={isAuth} setIsAuth={setIsAuth} />
-        </header>
+        <nav>
+          <Header />
+        </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="blog" element={<Blog />} />
+          <Route path="blog" element={<Blog />} >
+          </Route>
+          <Route path="blog/:blogTitle" element={<BlogArticle />} />
         </Routes>
 
 

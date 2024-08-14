@@ -28,8 +28,9 @@ function Hero() {
                 quasi. In deleniti eaque aut repudiandae et a id nisi.
               </p>
             </div>
-            <div>
-              <button className="btn-outline btn">Mirá mi CV</button>
+            <div className='flex gap-4'>
+              <button className="btn-outline btn">CV</button>
+              <button className='btn'>Blog</button>
             </div>
           </div>
         </div>
