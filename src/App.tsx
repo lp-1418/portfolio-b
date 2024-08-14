@@ -3,8 +3,6 @@ import Header from './components/landing/Header';
 import "./App.css"
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
 import Home from './pages/Home';
-import Login from './pages/Login';
-import CreatePost from './pages/CreatePost';
 import { useState } from 'react';
 import Blog from './pages/Blog';
 
@@ -21,8 +19,6 @@ function App() {
         </header>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="login" element={<Login setIsAuth={setIsAuth} />} />
-          <Route path="create" element={<CreatePost />} />
           <Route path="blog" element={<Blog />} />
         </Routes>
 
