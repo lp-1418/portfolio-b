@@ -26,7 +26,7 @@ function Header() {
 
 
   return (
-    <div className={`p-10 shadow-sm navbar border-second bg-gradient-to-r from-indigo-800 to-indigo-950 opacity-100  ${show ? 'active' : 'hidden'}`}>
+    <div className={`text-gray-400 p-10 shadow-sm navbar border-second bg-gradient-to-r from-indigo-800 to-indigo-950 opacity-100  ${show ? 'active' : 'hidden'}`}>
       <div className=' w-full mr-10 ml-10'>
         <div className="flex-1">
           <a className="btn btn-ghost text-xl"><Link to="/">LP</Link></a>

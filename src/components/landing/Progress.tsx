@@ -10,7 +10,7 @@ function Progress() {
             <h2 className='text-3xl font-bold'><span className='text-second'>4. </span>Progreso profesional</h2>
             <ul className="timeline self-center p-10">
               <li>
-                <div className="timeline-start timeline-box">Coderhouse Javascript</div>
+                <div className="timeline-start timeline-box bg-gray-800 border-gray-800">Coderhouse Javascript</div>
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -39,12 +39,12 @@ function Progress() {
                       clipRule="evenodd" />
                   </svg>
                 </div>
-                <div className="timeline-end timeline-box text-second">Coderhouse React.js</div>
+                <div className="bg-gray-800 border border-gray-800 timeline-end timeline-box text-second">Coderhouse React.js</div>
                 <hr className="bg-primary" />
               </li>
               <li>
                 <hr className="bg-primary" />
-                <div className="timeline-start timeline-box">Pasantía Alkemy Backend</div>
+                <div className="timeline-start timeline-box bg-gray-800 border-gray-800">Pasantía Alkemy Backend</div>
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,12 +73,12 @@ function Progress() {
                       clipRule="evenodd" />
                   </svg>
                 </div>
-                <div className="timeline-end timeline-box text-second">UAI - Analista programador</div>
+                <div className="timeline-end timeline-box text-second bg-gray-800 border-gray-800">UAI - Analista programador</div>
                 <hr />
               </li>
               <li>
                 <hr />
-                <div className="timeline-start timeline-box">Nuevos proyectos</div>
+                <div className="timeline-start timeline-box bg-gray-800 border-gray-800">Nuevos proyectos</div>
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

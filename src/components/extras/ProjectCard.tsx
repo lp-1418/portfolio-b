@@ -11,11 +11,11 @@ function ProjectCard({ side, title }) {
         <p className='text-second'>.NET 8.0 - PostgreSQL - Next.JS</p>
         <FaGithub size={24} className={'' + (side === true ? "self-end" : "self-start")} />
       </div>
-      <div className="mockup-browser bg-base-300 border">
-        <div className="mockup-browser-toolbar">
+      <div className="mockup-browser bg-gray-800 border-gray-800 shadow-xl">
+        <div className="mockup-browser-toolbar text-gray-400">
           <div className="input">https://daisyui.com</div>
         </div>
-        <div className="bg-base-200 flex justify-center px-4 p-1">
+        <div className="bg-gray-800 flex justify-center px-4 p-1">
           <img alt="proyecto-img" src='homer.gif' className="rounded-xl" />
         </div>
       </div>

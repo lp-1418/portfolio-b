@@ -43,7 +43,7 @@ function Projects() {
   };
 
   return (
-    <div id='proyectos' className="hero mb-0">
+    <div id='proyectos' className="text-gray-400 hero mb-0">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className='h-[100vh] flex justify-center items-center'>
           <div className='relative w-[65vw] h-[100vh]'>
