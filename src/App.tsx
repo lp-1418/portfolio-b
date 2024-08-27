@@ -8,7 +8,7 @@ import Header from './components/landing/Header';
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-indigo-800 to-indigo-950 min-h-[100vh] scroll-smooth">
+    <div className="bg-gradient-to-r from-indigo-800 to-indigo-950 min-h-[100vh] h-full scroll-smooth">
       <Router>
         <nav>
           <Header />
