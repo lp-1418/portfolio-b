@@ -7,10 +7,10 @@ function Header() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {
-    if (window.scrollY > lastScrollY) {
+    if (window.scrollY > lastScrollY && window.scrollY > 50) {
       // if scroll down hide the navbar
       setShow(false);
-    } else {
+    } else if (window.scrollY < lastScrollY) {
       // if scroll up show the navbar
       setShow(true);
     }
@@ -26,7 +26,7 @@ function Header() {
 
 
   return (
-    <div className={`text-gray-400 p-10 shadow-sm navbar xl:navbar border-second bg-gradient-to-r from-indigo-800 to-indigo-950 opacity-100  ${show ? 'active' : 'hidden'}`}>
+    <div className={`text-gray-400 p-10 shadow-sm navbar xl:navbar bg-gradient-to-r from-indigo-800 to-indigo-950 opacity-100  ${show ? 'active' : 'hidden'}`}>
       <div className=' w-full mr-10 ml-10'>
         <div className="flex-1">
           <a className="btn btn-ghost text-xl"><Link to="/">LP</Link></a>
