@@ -2,6 +2,11 @@
   --custom-color: #E59F71;
 }
 
+ html,body{
+    overflow-x: hidden;
+}
+
+
 .navbar {
   position: fixed;
   top: 0;

@@ -3,7 +3,7 @@ import "./landing.css"
 
 function Progress() {
   return (
-    <div id='progress' className="flex items-center flex-col mb-10 mt-96 xl:mt-0">
+    <div id='progress' className="flex xl:items-center flex-col mb-10 mt-96 w-[100vw] items-start  xl:w-full xl:mt-0">
       <div className=" flex-col  ">
         <div className='text-left flex justify-center flex-col '>
           <div className='flex gap-10 flex-col w-[65vw]' >

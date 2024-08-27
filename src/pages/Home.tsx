@@ -22,7 +22,7 @@ function Home() {
           <Projects />
         </SlideInSection>
       </div>
-      <div className="flex text-gray-400 flex-col items-center gap-10 app-content">
+      <div className="flex text-gray-400 flex-col xl:items-center xl:justify-center gap-10 app-content w-full xl:w-[100vw] ">
         <SlideInSection direction="slide-in">
           <Progress />
           <Contact />
