@@ -4,7 +4,7 @@ import "./landing.css"
 
 function Skills() {
   return (
-    <div className="text-gray-400 hero mb-[15vh]">
+    <div className="text-gray-400 hero mb-[100vh] xl:mb-[15vh]">
       <div className="hero-content flex-col lg:flex-row-reverse ">
         <div className='text-left flex justify-center flex-row'>
           <div className='flex gap-6 flex-wrap'>

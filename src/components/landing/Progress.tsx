@@ -3,12 +3,12 @@ import "./landing.css"
 
 function Progress() {
   return (
-    <div id='progress' className="flex items-center flex-col mb-10 ">
-      <div className=" flex-col lg:flex-row-reverse ">
+    <div id='progress' className="flex items-center flex-col mb-10 mt-96 xl:mt-0">
+      <div className=" flex-col  ">
         <div className='text-left flex justify-center flex-col '>
           <div className='flex gap-10 flex-col w-[65vw]' >
             <h2 className='text-3xl font-bold'><span className='text-second'>4. </span>Progreso profesional</h2>
-            <ul className="timeline self-center p-10">
+            <ul className="xl:timeline self-center p-10">
               <li>
                 <div className="timeline-start timeline-box bg-gray-800 border-gray-800">Coderhouse Javascript</div>
                 <div className="timeline-middle">

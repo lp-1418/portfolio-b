@@ -4,12 +4,12 @@ import "./landing.css"
 
 function Contact() {
   return (
-    <div id='contacto' className="flex flex-col w-[65vw] h-[65vh]">
+    <div id='contacto' className="flex flex-col xl:w-[65vw] xl:h-[65vh] w-full h-full">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className='flex flex-col w-full'>
           <div className='flex gap-6 flex-col'>
             <h2 className='text-3xl font-bold'> <span className='text-second'>5. </span>Contacto</h2>
-            <div className=' flex flex-row justify-between p-5'>
+            <div className=' flex flex-col xl:flex-row justify-between p-5'>
               <div className="w-96">
                 <h3 className='text-second  text-4xl'>Hablemos si querés saber más sobre mí.</h3>
                 <div className="mt-6">
