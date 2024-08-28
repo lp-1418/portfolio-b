@@ -5,10 +5,11 @@ function Progress() {
   return (
     <div id='progress' className="flex xl:items-center flex-col mb-10 mt-96 w-[100vw] items-start  xl:w-full xl:mt-0">
       <div className=" flex-col  ">
-        <div className='text-left flex justify-center flex-col '>
+        <h2 className='text-3xl p-4 xl:p-0 font-bold'><span className='text-second'>4. </span>Progreso profesional</h2>
+        <div className='text-left flex justify-center flex-col items-center'>
+
           <div className='flex gap-10 flex-col w-[65vw]' >
-            <h2 className='text-3xl font-bold'><span className='text-second'>4. </span>Progreso profesional</h2>
-            <ul className="xl:timeline self-center p-10">
+            <ul className="timeline timeline-vertical xl:timeline-horizontal self-center p-10">
               <li>
                 <div className="timeline-start timeline-box bg-gray-800 border-gray-800">Coderhouse Javascript</div>
                 <div className="timeline-middle">

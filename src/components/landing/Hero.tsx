@@ -13,22 +13,22 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero hero-b h-[84vh]">
+    <div className="hero hero-b h-[57vh] xl:h-[84vh]">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className='text-left flex justify-center flex-row slide-in mb-[30%]'>
           <div className='flex gap-6 flex-col '>
             <div className=''>
               <p className='text-second'>Mi nombre es </p>
-              <h1 className="text-7xl text-white font-extrabold">Lucas.</h1>
+              <h1 className="text-6xl lg:text-7xl text-white font-extrabold">Lucas.</h1>
             </div>
-            <p className='flex gap-1 flex-row items-end text-5xl text-gray-400 font-semibold'>
+            <p className='flex gap-1 flex-row items-end text-4xl lg:text-5xl text-gray-400 font-semibold'>
               <div>Escribo instrucciones para autómatas </div>
               <span className='relative mb-1 flex h-3 w-3'>
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-indigo-500"></span>
               </span>
             </p>
-            <div className='w-1/2'>
+            <div className=' xl:w-1/2'>
               <p className="text-gray-400">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                 quasi. In deleniti eaque aut repudiandae et a id nisi.
@@ -44,7 +44,7 @@ function Hero() {
 
       {
         isVisible ? <div className='self-end animate-bounce'>
-          <FaArrowAltCircleDown size={25} />
+          <FaArrowAltCircleDown size={25} className="text-gray-500" />
         </div> : <div> </div>
       }
 

@@ -43,11 +43,11 @@ function Projects() {
   };
 
   return (
-    <div id='proyectos' className="text-gray-400 hero mb-36 mt-28 xl:mb-0 xl:mt-0 xl:w-full w-max">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className='h-[100vh] flex justify-center items-center'>
-          <div className='relative w-[65vw] h-[100vh]'>
-            <h2 className='text-3xl font-bold text-left mb-10'><span className='text-second'>3. </span>Proyectos</h2>
+    <div id='proyectos' className="text-gray-400  xl:hero mb-60 mt-28 xl:mb-0 xl:mt-0 xl:w-full w-full">
+      <div className="hero-content flex-col">
+        <div className='h-[100vh]'>
+          <div className='relative xl:w-[65vw] h-[100vh]'>
+            <h2 className='text-3xl font-bold mb-10 w-max'><span className='text-second'>3. </span>Proyectos</h2>
             <button
               onClick={handlePrevSlide}
               disabled={isFirstSlide}

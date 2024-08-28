@@ -6,12 +6,12 @@ import "./landing.css"
 
 function About() {
   return (
-    <div id='about' className="text-gray-400 hero h-[50vh] mb-10 xl:mb-0">
+    <div id='about' className="text-gray-400 hero h-[50vh] mb-44 mt-20 xl:mt-0 xl:mb-0">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className='text-left flex justify-center flex-col '>
           <div className='flex gap-6 flex-col'>
             <h2 className='text-3xl font-bold'> <span className='text-second'>1.</span> Sobre mí</h2>
-            <div className='border shadow-xl bg-indigo-800 opacity-80 rounded-xl border-sky-500 flex flex-col h-96 xl:h-56 p-5 gap-2 '>
+            <div className='border shadow-xl bg-indigo-800 opacity-80 rounded-xl border-sky-500 flex flex-col h-[50vh] phone:h-96 xl:h-56 p-5 gap-2 '>
               <div className='flex justify-start flex-col'>
                 <span>
                   Lorem ipsum dolor sit amet, <strong className='text-second'>consectetur adipiscing elit</strong>
