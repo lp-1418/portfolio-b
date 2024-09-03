@@ -32,7 +32,7 @@ function Header() {
           <a className="btn btn-ghost text-xl"><Link to="/">LP</Link></a>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal text-[1.8vh]  px-1">
+          <ul className="menu menu-horizontal xl:text-[1.8vh]  px-1">
             <li><Link to={"/"}>Home </Link></li>
             <li>
               <Link to="/blog" >Blog </Link>

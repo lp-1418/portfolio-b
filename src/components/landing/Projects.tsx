@@ -51,14 +51,14 @@ function Projects() {
             <button
               onClick={handlePrevSlide}
               disabled={isFirstSlide}
-              className="btn btn-circle absolute left-[-2.5rem] top-1/2 transform -translate-y-1/2 z-10"
+              className="btn btn-circle absolute left-[-1rem] xl:left-[-2.5rem] top-[100vh] xl:top-1/2 transform -translate-y-1/2 z-10"
             >
               ❮
             </button>
             <button
               onClick={handleNextSlide}
               disabled={isLastSlide}
-              className="btn btn-circle absolute right-[-2.5rem] top-1/2 transform -translate-y-1/2 z-10"
+              className="btn btn-circle absolute right-[-1rem] xl:right-[-2.5rem] top-[100vh] xl:top-1/2 transform -translate-y-1/2 z-10"
             >
               ❯
             </button>

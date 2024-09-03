@@ -4,7 +4,7 @@ function BlogCard({ title }) {
   return (
     <Link to={`/blog/${encodeURIComponent(title)}`}>
 
-      <div className="transition ease-in-out hover:-translate-y-1 hover:scale-100 duration-200  rounded-xl h-[35vh] p-5 glass w-80">
+      <div className="transition ease-in-out hover:-translate-y-1 hover:scale-100 duration-200  rounded-xl xl:h-[35vh] p-5 glass w-80">
         <figure className=''>
           <img
             className='rounded-xl'

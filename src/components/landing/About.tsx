@@ -6,7 +6,7 @@ import "./landing.css"
 
 function About() {
   return (
-    <div id='about' className="text-gray-400 hero mt-20 xl:mt-0 xl:mb-0">
+    <div id='about' className="text-gray-400 hero  mt-20 xl:mt-0 xl:mb-0">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className='text-left flex justify-center flex-col '>
           <div className='flex gap-6 flex-col'>

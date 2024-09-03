@@ -9,8 +9,8 @@ function Blog() {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <div className="hero-b min-h-[85vh] h-fit prose flex-wrap lg:prose-lg items-center flex justify-around min-w-[100%]">
-      <div className="flex flex-row flex-wrap justify-between w-[70%] gap-10">
+    <div className="hero-b min-h-[85vh] h-fit prose flex-wrap lg:prose-lg items-center flex justify-around w-full  xl:min-w-[100%]">
+      <div className="flex flex-col items-center xl:flex-row xl:flex-wrap xl:justify-between w-full xl:w-[70%] gap-10">
         <BlogCard title="Blog 1" />
         <BlogCard title="Blog 2" />
         <BlogCard title="Blog 3" />
